@@ -1,0 +1,13 @@
+package ${package_name}.manager;
+
+import com.whh.common.mybatis.BaseService;
+import ${package_name}.dao.model.${model};
+import ${package_name}.dao.model.${model}Example;
+
+/**
+* ${model}Service
+*  on ${ctime}.
+*/
+public interface ${model}Manager extends BaseService<${model}, ${model}Example> {
+
+}

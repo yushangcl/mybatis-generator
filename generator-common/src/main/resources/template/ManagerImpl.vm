@@ -1,0 +1,32 @@
+package ${package_name}.manager.impl;
+
+import com.whh.common.mybatis.base.BaseManagerImpl;
+import ${package_name}.dao.mapper.${model}DOMapper;
+import ${package_name}.model.${model};
+import ${package_name}.dao.model.${model}DO;
+import ${package_name}.dao.model.${model}DOExample;
+import ${package_name}.manager.${model}Manager;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
+
+/**
+* ${model}ManagerImpl
+*  on ${ctime}.
+*/
+@Service
+@Transactional
+public class ${model}ManagerImpl extends BaseManagerImpl<${model}DOMapper, ${model}, ${model}DO, ${model}DOExample> implements ${model}Manager {
+
+    private static Logger _log = LoggerFactory.getLogger(${model}ManagerImpl.class);
+
+    @Autowired
+    ${model}DOMapper ${mapper}DOMapper;
+
+    @Override
+    public ${model}DOMapper getMapper() {
+        return ${mapper}DOMapper;
+    }
+}

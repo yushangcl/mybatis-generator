@@ -1,0 +1,14 @@
+package ${package_name}.manager;
+
+import com.whh.common.mybatis.BaseServiceMock;
+import ${package_name}.dao.mapper.${model}Mapper;
+import ${package_name}.dao.model.${model};
+import ${package_name}.dao.model.${model}Example;
+
+/**
+* ${model}Service
+*  on ${ctime}.
+*/
+public class ${model}ManagerMock extends BaseServiceMock<${model}Mapper, ${model}, ${model}Example> implements ${model}Manager {
+
+}

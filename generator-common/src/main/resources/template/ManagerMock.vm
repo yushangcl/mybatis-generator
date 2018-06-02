@@ -1,0 +1,14 @@
+package ${package_name}.manager.mock;
+
+import com.whh.common.mybatis.base.BaseManagerMock;
+import ${package_name}.manager.${model}Manager;
+import ${package_name}.model.${model};
+import ${package_name}.dao.model.${model}DOExample;
+
+/**
+* ${model}Manager
+*  on ${ctime}.
+*/
+public class ${model}ManagerMock extends BaseManagerMock<${model}, ${model}DOExample> implements ${model}Manager {
+
+}
